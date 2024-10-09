@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h2>YOU CAN VIEW, UPADTE, & DELETE RECORD FROM STUDENT DATA</h2>
+
+    <!-- Form to Find Record by Seat Number -->
+    <h3>Find student information by their email</h3>
+    <form action="show_record.php" method="POST">  <!-- Points to PHP script to find record -->
+        <label for="em"><b><i>Email</i></b></label>
+        <input type="text" name="email" id="em" required>
+        <button type="submit">Find Record</button>
+    </form>
+
+    <!-- Form to Update Record -->
+    <h3>Update student information</h3>
+    <form action="update_record.php" method="POST">  <!-- Points to PHP script to update record -->
+        <label for="na"><b><i>Name</i></b></label>
+        <input type="text" name="name" id="na" required>
+
+        <label for="add"><b><i>Address</i></b></label>
+        <input type="text" name="address" id="add">
+
+        <label for="Db"><b><i>DOB</i></b></label>
+        <input type="date" name="dob" id="Db">
+
+        <label for="no"><b><i>Number</i></b></label>
+        <input type="text" name="number" id="no">
+
+        <label for="marks"><b><i>CGPA</i></b></label>
+        <input type="text" name="cgpa" id="marks">
+
+        <button type="submit">Update Record</button>
+    </form>
+
+    <!-- Form to Delete Record -->
+    <h3>Delete student information</h3>
+    <form action="delete_record.php" method="POST">  <!-- Points to PHP script to delete record -->
+        <label for="em"><b><i>Email</i></b></label>
+        <input type="text" name="email" id="em" required>
+        
+        <button type="submit">Delete Record</button>
+    </form>
+
+</body>
+</html>
